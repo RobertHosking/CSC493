@@ -19,8 +19,6 @@ You will need to install the Go-Ethereum (Geth) framework and sync the Ethereum 
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
 ```
 Give the example
 ```
@@ -49,7 +47,7 @@ We welcome suggestions to our smart contract code.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+**Robert Hosking**
 
 ## License
 
