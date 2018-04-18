@@ -15,25 +15,42 @@ We reccommend [Trust Wallet](https://trustwalletapp.com/) for iOS and Android.
 To deploy this smart contract yourself, follow [this guide](https://medium.com/mercuryprotocol/dev-highlights-of-this-week-cb33e58c745f)
 You will need to install the Go-Ethereum (Geth) framework and sync the Ethereum blockchain.
 
-### Installing
+### Install and Deploy
 
-A step by step series of examples that tell you have to get a development env running
-
-```
-Give the example
-```
-
-And repeat
+Install the Geth framework:
 
 ```
-until finished
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install ethereum
+```
+to begin syncing the Ethereum blockchain without performing verification on each block hash, run
+
+```
+geth --fast
+```
+Install a solC (solidity complier)
+
+```
+sudo add-apt-repository ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install solc
+which solc
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+in the geth console type
 
-## Deployment
+```
+admin.setSolc("path/to/solc")
+```
+now type
 
-Add additional notes about how to deploy this on a live system
+```
+eth.getCompilers()
+```
+It should show that you have `['Solidity']` installed.
+
+From here, follow [this guide](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial#the-coin) using the contents of `coin.sol` as the smartcontract code.
 
 ## Built With
 
@@ -44,10 +61,6 @@ Add additional notes about how to deploy this on a live system
 ## Contributing
 
 We welcome suggestions to our smart contract code.
-
-## Authors
-
-**Robert Hosking**
 
 ## License
 
