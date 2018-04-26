@@ -3,7 +3,7 @@ pragma solidity ^0.4.18;
 // ----------------------------------------------------------------------------
 // 'YAPs' token contract
 //
-// Deployed to : 0x70f737a630ac917f5e8a093ddf4f1e549d13c157
+// Deployed to : 0x1F4B1921161c49B0E0B4883df3c31Bf6f77961a1
 // Symbol      : YAP
 // Name        : Payvr Token
 // Total supply: 1000000000
@@ -112,13 +112,13 @@ contract YAP is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function FucksToken() public {
+    function PayvrToken() public {
         symbol = "YAP";
         name = "Payvr Token";
         decimals = 18;
         _totalSupply =  1000000000;
-        balances[0x70f737a630ac917f5e8a093ddf4f1e549d13c157] = _totalSupply;
-        Transfer(address(0), 0x70f737a630ac917f5e8a093ddf4f1e549d13c157, _totalSupply);
+        balances[0x1F4B1921161c49B0E0B4883df3c31Bf6f77961a1] = _totalSupply;
+        Transfer(address(0), 0x1F4B1921161c49B0E0B4883df3c31Bf6f77961a1, _totalSupply);
     }
 
 
